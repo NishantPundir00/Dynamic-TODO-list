@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background: #f5f5f5;
+    min-height: 100%;
+    height: auto;
+}
+
+button {
+    min-width: 80px;
+    padding: 0.2rem 0.5rem;
+    margin: 0 .1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+
+}
+
+header .navbar {
+    padding: 1.5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+header .navbar img {
+    height: auto;
+    width: 60px;
+} 
+
+header nav.navbar .navbar-brand {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+header .navbar input{
+    width: 250px;
+}
+
+
+/** Filter **/
+
+
+
+/** Todo Outer **/
+section.todo-outer {
+    width: 100%;
+    padding: 30px 0;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.todo-outer .todo-container {
+    width: 700px;
+    margin: 0 1rem;
+}
+
+.todo-outer .todo-container h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 20px;
+} 
+
+.todo-outer .todo-container .todo-inner{
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 10px #c1c1c1;
+}
+
+.todo-outer .todo-container .todo-inner .form {
+    width: 100%;
+    padding: 3rem 2rem;
+    background: linear-gradient(45deg,#C33764,#1D2671);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.todo-outer .todo-container .todo-inner .form input {
+    width: 64%;
+    height: 35px;
+    border: none;
+    padding: .2rem .5rem ;
+    margin: .2rem .1rem;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.todo-outer .todo-container .todo-inner .dropdown{
+    width: 100px;
+    height: 35px;
+    border: none;
+    background: #fff;
+    padding: .2rem .5rem ;
+    margin: 0 .1rem;
+    border-radius: 5px;
+}
+
+
+
+.todo-outer .todo-container .todo-inner .form button {
+    width: 50px;
+    min-width: 40px;
+    height: 35px;
+    padding: 0.2rem 0.5rem;
+    margin: 0 .1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    background: #fff;
+    color: #1D2671;
+    transition: 0.1s linear;
+}
+
+
+
+.todo-outer .todo-container .todo-inner .form button:hover {
+    background: #5cb85c;
+    color: #fff;
+}
+
+.todo-outer .todo-container .todo-inner .form .delete-all {
+    width: 60px;
+    min-width: 50px;
+    color: #d9534f;
+}
+
+.todo-outer .todo-container .todo-inner .form .delete-all:hover{
+    background: #d9534f;
+    color: #fff;
+}
+
+/**  Todo OutPut Style**/
+
+.todo-container .todo-output table {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-container .todo-output tr {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1.2rem 0;
+    border-bottom: 2px solid #f3f3f3;
+    padding-bottom: 10px;
+}
+
+.todo-container .todo-output tr .serial-number {
+    width: 5%;
+    padding: 4px 0;
+    
+}
+
+.todo-container .todo-output tr .task {
+    width: 65%;
+    padding: 4px 0;
+    padding-left: 10px;
+}
+
+.todo-container .todo-output tr .edit {
+    width: 10%;
+    margin: 0 .8rem;
+    padding: 4px 0;
+}
+.todo-container .todo-output tr .delete {
+    width: 10%;
+    margin: 0 .8rem;
+    padding: 4px 0;
+}
+
+/*  Filter Section  */
+
+.filter {
+    width: 100%;
+    height: 4rem;
+    padding: 0 1.5rem;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap; 
+
+}
+
+.filter h2 {
+    font-size: 1.2rem;
+    margin: auto 0;
+    margin-right: 2rem;
+}
+
+.filter .filterbtn {
+    width: 80px;
+    height: 35px;
+    padding: 0.2rem 0.5rem;
+    margin: .2rem .1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background: #f2f2f2;
+    transition: 0.1s linear;
+
+}
+
+.filter .filterbtn:nth-child(2):hover,.High {
+    background: #d9534f !important;
+    color: #fff;
+}
+
+.filter .filterbtn:nth-child(3):hover,.Medium {
+    background: #f0ad4e !important;
+    color: #fff;
+}
+
+.filter .filterbtn:nth-child(4):hover,.Low {
+    background: #5cb85c !important;
+    color: #fff;
+}
+
+.filter .filterbtn:nth-child(5):hover,.All {
+    background: #212529 !important;
+    color: #fff;
+}
+
+/*  footer  */
+
+footer {
+    width: 100%;
+    margin: 0;
+    margin-top: 1rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background: #212529 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+}
+
+footer p {
+    margin: auto 0;
+}
